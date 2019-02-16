@@ -1,5 +1,6 @@
 import React from 'react';
 import Map from "../Map/Map";
+import Settings from "../Settings/Settings"
 
 class HomePage extends React.Component{
 
@@ -8,6 +9,7 @@ class HomePage extends React.Component{
         return(
             <div>
                 <Map/>
+                <Settings/>
             </div>
         );
     }
