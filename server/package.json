@@ -7,17 +7,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "bcrypt": "^3.0.3",
-    "cookie-parser": "^1.4.3",
-    "express": "^4.16.2",
-    "express-session": "^1.15.6",
-    "morgan": "^1.9.1",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
-    "pg": "^7.3.0",
-    "pg-monitor": "^0.8.3",
-    "pg-promise": "^7.0.3",
-    "sequelize": "^4.42.0"
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"

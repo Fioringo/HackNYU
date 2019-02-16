@@ -1,5 +1,5 @@
 {
-  "name": "Team.me",
+  "name": "Wattmon",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). ",
   "main": "index.js",
@@ -8,21 +8,12 @@
     "start": "concurrently --kill-others-on-fail \"cd client && npm start\" \"cd server && nodemon server.js\"",
     "start:dev": "cd server && NODE_ENV=production node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PsyCas/Team-me2.git"
-  },
+
   "keywords": [],
   "author": "Team.me",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "faker": "^4.1.0",
-    "jsonwebtoken": "^8.4.0",
-    "passport": "^0.4.0",
-    "passport-jwt": "^4.0.0",
-    "passport-local": "^1.0.0",
-    "session": "^0.1.0"
   },
   "devDependencies": {
     "concurrently": "^3.6.1"
