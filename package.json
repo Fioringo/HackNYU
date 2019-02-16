@@ -8,12 +8,10 @@
     "start": "concurrently --kill-others-on-fail \"cd client && npm start\" \"cd server && nodemon server.js\"",
     "start:dev": "cd server && NODE_ENV=production node server.js"
   },
-
   "keywords": [],
-  "author": "Team.me",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "concurrently": "^3.6.1"
