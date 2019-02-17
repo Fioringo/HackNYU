@@ -9,4 +9,7 @@ router.route('/news/everything')
 router.route('/news/topHeading')
     .get(newsTopHeading);
 
+// router.route('/news/everything')
+//     .get(news)
+
 export default router;
