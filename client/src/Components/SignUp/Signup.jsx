@@ -49,7 +49,7 @@ class Signup extends React.Component{
         if(this.props.isSignUp){
             return(
                 <div id="signup-wrapper">
-                    <button onClick = {this.props.onClose}>Close</button>
+                    <button class = "button-layout" onClick = {this.props.onClose}>Close</button>
                     This is signup.
                 </div>
             );

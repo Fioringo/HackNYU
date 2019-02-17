@@ -9,10 +9,27 @@
 }
 
 #nav-bar{
+    background: linear-gradient(135deg, #4ca4d3 0%,#009126 100%);
+    background: -moz-linear-gradient(-45deg, #4ca4d3 0%, #009126 100%);
+    background: -webkit-linear-gradient(-45deg, #4ca4d3 0%,#009126 100%);
     flex:1;
 }
 
 #settings-wrapper, #signup-wrapper{
+    background: linear-gradient(135deg, #4ca4d3 0%,#009126 100%);
+    background: -moz-linear-gradient(-45deg, #4ca4d3 0%, #009126 100%);
+    background: -webkit-linear-gradient(-45deg, #4ca4d3 0%,#009126 100%);
     flex:5;
 }
 
+.button-layout{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+}
+
+.button-layout:hover{
+    cursor: pointer;
+}

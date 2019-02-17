@@ -76,9 +76,9 @@ class Map extends React.Component{
             L.circle([location.latitude,location.longitude],{
                 color: 'green',
                 fillColor: 'green',
-                opacity: 0.75,
-                radius: 500,
-                stroke: false
+                // opacity: 0.75,
+                radius: 300,
+                // stroke: false
             }).addTo(this.map);
         });
     }

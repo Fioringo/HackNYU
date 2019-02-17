@@ -45,9 +45,9 @@ class Settings extends React.Component{
         if(this.props.isSettings){
             return(
                 <div id="settings-wrapper">
-                    <button onClick = {this.props.onClose}>Close</button>
-                    <button id="buttonAbout" onClick = {this.props.onAbout}>About</button>
-                    <button id="buttonSignup" onClick = {this.props.onSignUp}>Sign up</button>
+                    <button class = "button-layout" onClick = {this.props.onClose}>Close</button>
+                    <button class="button-layout" onClick = {this.props.onAbout}>About</button>
+                    <button class = "button-layout" onClick = {this.props.onSignUp}>Sign up</button>
                     <div id="footer">(c) VYEW Team</div>
                 </div>
             );
