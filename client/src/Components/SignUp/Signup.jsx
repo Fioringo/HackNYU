@@ -16,46 +16,52 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
 
     const possibleStates = [
-        {type: CLICKSETTINGS, isSignUp: false, isSettings: true, isAbout: false, isViewBar: false},
-        {type: CLICKSIGNUP, isSignUp: true, isSettings: false, isAbout: false, isViewBar: false},
-        {type: CLICKABOUT, isSignUp: false, isSettings: false, isAbout: true, isViewBar: false},        
-        {type: CLICKCLOSE, isSignUp: false, isSettings: false, isAbout: false, isViewBar: true}
+        {type: CLICKSETTINGS, isSignUp: false, isSettings: true, isAbout: false,  isViewBar: false},
+        {type: CLICKSIGNUP, isSignUp: true, isSettings: false, isAbout: false,  isViewBar: false},
+        {type: CLICKABOUT, isSignUp: false, isSettings: false, isAbout: true,  isViewBar: false},        
+        {type: CLICKCLOSE, isSignUp: false, isSettings: false, isAbout: false,  isViewBar: true}
     ];
 
     return {
+
         onSettings: () =>{
             dispatch(possibleStates[0]);
         },
+
         onSignUp: () => {
             dispatch(possibleStates[1]);
         },
+
         onAbout: () => {
             dispatch(possibleStates[2]);
         },
+
         onClose: () => {
             dispatch(possibleStates[3]);
-        }
+        },
     }
 };
 
-
-class Settings extends React.Component{
+class Signup extends React.Component{
 
     render(){
-        if(this.props.isSettings){
+        
+        if(this.props.isSignUp){
             return(
-                <div id="settings-wrapper">
+                <div id="signup-wrapper">
                     <button class = "button-layout" onClick = {this.props.onClose}>Close</button>
-                    <button class="button-layout" onClick = {this.props.onAbout}>About</button>
-                    <button class = "button-layout" onClick = {this.props.onSignUp}>Sign up</button>
-                    <div id="footer">(c) VYEW Team</div>
+                    This is signup.
                 </div>
             );
-        }else{
-            return true;
-        } 
+        }
+
+        else{
+            return(true);
+        }
     }
+
 }
 
-const SettingsState = connect(mapStateToProps, mapDispatchToProps)(Settings);
-export default SettingsState;
+
+const SignupState = connect(mapStateToProps, mapDispatchToProps)(Signup);
+export default SignupState;

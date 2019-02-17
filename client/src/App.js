@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom'; 
 import React, { Component } from 'react';
-// import HomePage from "./Components/HomePage/HomePage";
-import "./Components/Styles/Home.css"
-import homeState from './Components/HomeStates/HomeStates';
+import HomePage from './Components/HomePage/HomePage';
 
 class App extends Component {
   render() {
@@ -10,7 +8,7 @@ class App extends Component {
     	<Router>
 	    	<div>
         {/* change this route to be the redux state */}
-		    	<Route exact path="/" component={homeState} /> 
+		    	<Route exact path="/" component={HomePage} /> 
 	    	</div>
     	</Router>
     );

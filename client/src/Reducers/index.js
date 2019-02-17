@@ -2,13 +2,10 @@ import { CLICKSETTINGS, CLICKSIGNUP, CLICKABOUT, CLICKCLOSE} from "../Actions";
 
 const initialState = {
 
-    stateStack: [],
     isSignUp: false,
     isSettings: false,
     isAbout: false,
-    width: "95vw",
-    isViewBar: true,
-    mapData: []
+    isViewBar: true
 };
 
 export default (state = initialState, action) =>{
