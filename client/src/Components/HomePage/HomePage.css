@@ -9,9 +9,9 @@
 }
 
 #nav-bar, #settings-wrapper, #signup-wrapper, #about-wrapper {
-    background: linear-gradient(135deg, #02C39A 0%,#00A896 100%);
-    background: -moz-linear-gradient(-45deg, #02C39A 0%,#00A896 100%);
-    background: -webkit-linear-gradient(-45deg, #02C39A 0%,#00A896 100%);
+    background: linear-gradient(135deg, #98AE1A 0%,#3F703A 100%);
+    background: -moz-linear-gradient(-45deg, #98AE1A 0%,#3F703A 100%);
+    background: -webkit-linear-gradient(-45deg, #98AE1A 0%,#3F703A 100%);
     color: white;
     padding: 0.5em;
     text-align: center;
@@ -168,14 +168,14 @@ input[type=submit] {
     -moz-box-shadow: 5px 5px 3px 2px rgba(0,0,0,0.4);
     box-shadow: 5px 5px 3px 2px rgba(0,0,0,0.4);
     border-radius: 15px;
-    background-color: #028090;
+    background-color: #3F703A;
     overflow: hidden;
     display: flex;
     flex-flow: row;
 }
 
 .article:hover {
-    background-color: #00A896;
+    background-color: #98AE1A;
 }
 
 .articleBox {
@@ -185,7 +185,7 @@ input[type=submit] {
     padding: 0.2em;
     border: solid white 1px;
     border-radius: 15px;
-    background-color: #00A896;
+    background-color: #709255;
 }
 
 .article-image {

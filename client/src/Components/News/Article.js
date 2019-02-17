@@ -3,6 +3,16 @@ import "../HomePage/HomePage.css"
 
 class Article extends Component {
 
+    constructor(props){
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick(e){
+        
+    }
+
     render() {
         return (
             <div onclick={"location.href="+this.props.url} className="article">
