@@ -53,7 +53,7 @@ class Signup extends React.Component{
         if(this.props.isSignUp){
             return(
                 <div id="signup-wrapper">
-                    <button class = "button-layout" onClick = {this.props.onClose}>Close</button>
+                    <button class = "back" onClick = {this.props.onClose}></button>
                     <div class = "title">Sign Up</div>
                     <div class = "text">
                         Please sign up to our newsletter!
@@ -61,6 +61,7 @@ class Signup extends React.Component{
                     <form onSubmit={this.handleSubmit}>
                         <input class = "inputText" type = "text" defaultValue="foo@bar.com"></input>
                         <input type = "submit" value = "Sign up"></input>
+                        <div id="footer">© VYEW Team</div>
                     </form>
                 </div>
             );

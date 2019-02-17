@@ -19,8 +19,9 @@
 
 #nav-bar{
     /* flex:1; */
-    width: 5vw;
-    animation: slide-right 0.2s 1;
+    width: 20vw;
+    overflow: hidden;
+    /* animation: slide-right 0.2s 1; */
 }
 
 #settings-wrapper, #signup-wrapper, #about-wrapper{
@@ -28,9 +29,9 @@
     width: 20vw;
 }
 
-#settings-wrapper {
+/* #settings-wrapper {
     animation: slide-left 0.2s 1;
-}
+} */
 
 .button-layout{
     border: 1px solid white;
@@ -137,4 +138,38 @@ input[type=submit] {
     -webkit-box-shadow: -5px -5px 3px -2px rgba(0,0,0,0.4);
     -moz-box-shadow: -5px -5px 3px -2px rgba(0,0,0,0.4);
     box-shadow: -5px -5px 3px -2px rgba(0,0,0,0.4);
+}
+
+.logo {
+    margin: 0.2em;
+    background-image: url(../NavBar/logo.png);
+    background-size: 3vw 3vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.top {
+    display: flex;
+    flex-flow: row;
+}
+
+.article {
+    margin: 0.2em;
+    padding: 0.2em;
+    border: solid white 1px;
+    -webkit-box-shadow: 5px 5px 3px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 3px 2px rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 3px 2px rgba(0,0,0,0.4);
+    border-radius: 15px;
+    background-color: #028090;
+}
+
+.articleBox {
+    overflow: scroll;
+    height: 75vh;
+    margin: 0.2em;
+    padding: 0.2em;
+    border: solid white 1px;
+    border-radius: 15px;
+    background-color: #00A896;
 }
