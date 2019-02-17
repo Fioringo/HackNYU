@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {CLICKSETTINGS, CLICKSIGNUP, CLICKABOUT, CLICKCLOSE} from "../../Actions";
 import "../HomePage/HomePage.css";
+import ArticleBox from '../News/ArticleBox';
 
 const mapStateToProps = (state, ownProps) => {
 
@@ -18,7 +19,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     const possibleStates = [
         {type: CLICKSETTINGS, isSignUp: false, isSettings: true, isAbout: false,  isViewBar: false},
         {type: CLICKSIGNUP, isSignUp: true, isSettings: false, isAbout: false,  isViewBar: false},
-        {type: CLICKABOUT, isSignUp: false, isSettings: false, isAbout: true,  isViewBar: false},        
+        {type: CLICKABOUT, isSignUp: false, isSettings: false, isAbout: true,  isViewBar: false},
         {type: CLICKCLOSE, isSignUp: false, isSettings: false, isAbout: false,  isViewBar: true}
     ];
 
@@ -50,6 +51,7 @@ class NavBar extends React.Component{
             return(
                 <div id="nav-bar">
                     <button className = "gear" onClick={this.props.onSettings}></button>
+                    <ArticleBox />
                     <div id="footer">© Vyew Team</div>
                 </div>
             );
