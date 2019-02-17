@@ -4,9 +4,13 @@ import 'leaflet/dist/leaflet.css';
 import styled from 'styled-components';
 import "../Styles/Maps.css"
 
+//     width: ${props =>  props.width};
+//     height: ${props => props.height};
+
+
 const Wrapper = styled.div`
-    width: ${props =>  props.width};
-    height: ${props => props.height};
+    width: 95vw;
+    height: 100vh;
     background: #AAD3DF;
 `;
 
