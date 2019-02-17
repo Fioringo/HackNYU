@@ -44,13 +44,24 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
 class Signup extends React.Component{
 
+    handleSubmit = (e) => {
+        console.log(e)
+    }
+
     render(){
         
         if(this.props.isSignUp){
             return(
                 <div id="signup-wrapper">
                     <button class = "button-layout" onClick = {this.props.onClose}>Close</button>
-                    This is signup.
+                    <div class = "title">Sign Up</div>
+                    <div class = "text">
+                        Please sign up to our newsletter!
+                    </div>
+                    <form onSubmit={this.handleSubmit}>
+                        <input class = "inputText" type = "text" defaultValue="foo@bar.com"></input>
+                        <input type = "submit" value = "Sign up"></input>
+                    </form>
                 </div>
             );
         }

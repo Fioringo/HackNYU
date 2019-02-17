@@ -49,7 +49,7 @@ class NavBar extends React.Component{
         if(this.props.isViewBar){
             return(
                 <div id="nav-bar">
-                    <button class="button-layout" onClick={this.props.onSettings}>Settings</button>
+                    <button className = "gear" onClick={this.props.onSettings}></button>
                 </div>
             );
         }
