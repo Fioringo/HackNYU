@@ -13,20 +13,20 @@
     background: -moz-linear-gradient(-45deg, #02C39A 0%,#00A896 100%);
     background: -webkit-linear-gradient(-45deg, #02C39A 0%,#00A896 100%);
     color: white;
-    padding: 0.1em;
+    padding: 0.5em;
     text-align: center;
 }
 
 #nav-bar{
     /* flex:1; */
-    width: 20vw;
+    width: 22vw;
     overflow: hidden;
     /* animation: slide-right 0.2s 1; */
 }
 
 #settings-wrapper, #signup-wrapper, #about-wrapper{
     /* flex:5; */
-    width: 20vw;
+    width: 22vw;
 }
 
 /* #settings-wrapper {
@@ -87,6 +87,10 @@ input[type=submit] {
 }
 
 #footer {
+    width: 22vw;
+    text-align: left;
+    align-content: center;
+    align-items: center;
     position: absolute;
     bottom: 0px;
 }
@@ -156,7 +160,7 @@ input[type=submit] {
 }
 
 .article {
-    width: 18vw;
+    width: 20vw;
     margin: 0.2em;
     padding: 0.2em;
     border: solid white 1px;
@@ -170,9 +174,13 @@ input[type=submit] {
     flex-flow: row;
 }
 
+.article:hover {
+    background-color: #00A896;
+}
+
 .articleBox {
     overflow: scroll;
-    height: 75vh;
+    height: 77vh;
     margin: 0.2em;
     padding: 0.2em;
     border: solid white 1px;
@@ -182,8 +190,10 @@ input[type=submit] {
 
 .article-image {
     /* max-height: 10vh; */
-    width: 18vw;
-    background-position: -20px 0px;
+    width: 21vw;
+    margin-top: -0.2vh;
+    margin-left: -0.2vw;
+
 }
 
 .newsTitle {
@@ -201,4 +211,21 @@ input[type=submit] {
 .newsTime {
     font-size: 0.5em;
     color: white;
+}
+
+.aboutTitle {
+    font-size: 3em;
+    font-weight: 300;
+    color: white;
+}
+
+.aboutImage {
+    align-self:center;
+    width: 20vw;
+    margin: 0.2em;
+    background-image: url(../NavBar/logo.png);
+    background-size: auto 20vw;
+    min-height: 35vh;
+    background-repeat: no-repeat;
+    height: auto;
 }
