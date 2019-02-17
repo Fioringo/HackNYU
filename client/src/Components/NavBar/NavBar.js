@@ -50,6 +50,7 @@ class NavBar extends React.Component{
             return(
                 <div id="nav-bar">
                     <button className = "gear" onClick={this.props.onSettings}></button>
+                    <div id="footer">© Vyew Team</div>
                 </div>
             );
         }

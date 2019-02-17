@@ -45,8 +45,8 @@ class About extends React.Component{
         if(this.props.isAbout){
             return(
                 <div id="about-wrapper">
-                    <button class = "button-layout" onClick = {this.props.onClose}>Close</button>
-                    <div id="footer">(c) VYEW Team</div>
+                    <button class = "back" onClick = {this.props.onClose}></button>
+                    <div id="footer">© Vyew Team</div>
                 </div>
             );
         }else{

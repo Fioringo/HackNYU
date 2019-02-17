@@ -48,7 +48,7 @@ class Settings extends React.Component{
                     <button className = "back" onClick = {this.props.onClose}></button>
                     <button className = "button-layout" onClick = {this.props.onAbout}>About</button>
                     <button className = "button-layout" onClick = {this.props.onSignUp}>Sign up</button>
-                    <div id="footer">(c) VYEW Team</div>
+                    <div id="footer">© Vyew Team</div>
                 </div>
             );
         }else{
