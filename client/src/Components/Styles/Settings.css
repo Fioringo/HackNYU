@@ -1,0 +1,43 @@
+#Settings {
+    width: 7vw;
+    height: 100vh;
+    /* background-color: #82b4ff; */
+    background: linear-gradient(135deg, #4ca4d3 0%,#009126 100%);
+    background: -moz-linear-gradient(-45deg, #4ca4d3 0%, #009126 100%);
+    background: -webkit-linear-gradient(-45deg, #4ca4d3 0%,#009126 100%);
+    right: 0;
+    color: black;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+}
+
+#buttonAbout, #buttonSignup {
+    font-size: 2em;
+    padding: 0.2em;
+    text-align: center;
+    font-weight: 400;
+}
+
+#buttonAbout:hover, #buttonSignup:hover {
+    /* background-color: #4dca6f; */
+    /* border-radius: 15px; */
+    background: linear-gradient(135deg, #4ca4d3 0%,#009126 100%);
+    background: -moz-linear-gradient(-45deg, #4ca4d3 0%, #009126 100%);
+    background: -webkit-linear-gradient(-45deg, #4ca4d3 0%,#009126 100%);
+}
+
+/* #buttonSignup {
+    font-size: 2em;
+    padding: 0.2em;
+    text-align: center;
+    /* align-content: center; */
+    /* justify-content: center; */
+/* } */
+
+#settingsContent {
+    padding: 0.2em;
+}
+

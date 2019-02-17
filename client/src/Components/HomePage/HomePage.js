@@ -70,7 +70,13 @@ class HomePage extends React.Component{
                 'Content-Type': 'application/json' 
             }
         })
-
+    //     return(
+    //         <div id="content">
+    //             <div id="mapWrapper"><Map/></div>
+    //             <div id="settingsWrapper"><Settings/></div>
+    //         </div>
+    //     );
+    // }
         .then((response) => {
 
             console.log("We got a response.");

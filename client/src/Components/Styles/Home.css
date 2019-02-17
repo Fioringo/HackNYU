@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    background-color: black;
+    flex-flow: row;
+}
+
+#content {
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+}
+
+.root {
+    display: flex;
+    width: 100vw;
+    flex-flow: row;
+}
+
+#mapWrapper {
+    width: 93vw;
+}
+
+#settingsWrapper {
+    width: 7vw;
+    height: 100vh;
+}
+
+@keyframes slide-left{
+    from {
+        width: 0;
+    }
+    to{
+        width: 30vw;
+    }
+}
+
+@keyframes minimize-left{
+    from {
+        width: 95vw;
+    }
+    to {
+        width: 80vw;
+    }
+}
+
+@keyframes slide-right{
+    from {
+        width: 20vw;
+    }
+    to{
+        width: 5vw;
+    }
+}
+
+@keyframes expand-left{
+    from {
+        width: 80vw;
+    }
+    to {
+        width: 95vw;
+    }
+}
+
+#mapWrapper.small {
+    animation: minimize-left 0.2s 1;
+    width: 80vw;
+}
+
+#mapWrapper.large {
+    animation: expand-left 0.2s 1;
+    width: 95wv;
+}
+
+#settingsWrapper.small {
+    animation: slide-left 0.2s 1;
+    width: 5vw;
+}
+
+#settingsWrapper.large {
+    animation: slide-right 0.2s 1;
+    width: 20vw;
+}
