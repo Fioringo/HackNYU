@@ -36,7 +36,6 @@ const HomePage = ({mapData, onSettings, onSignUp, onAbout, onClose, stateStack})
             <Map mapData = {mapData}/>
         </div>
     );
-
 }
 
 export default HomePage;
