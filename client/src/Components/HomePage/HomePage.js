@@ -4,6 +4,7 @@ import MapState from "../Map/Map";
 import NavBarState from "../NavBar/NavBar";
 import SettingsState from '../Settings/Settings';
 import SignupState from '../SignUp/Signup';
+import AboutState from '../About/About';
 
 import "./HomePage.css";
 
@@ -100,6 +101,7 @@ class HomePage extends React.Component{
                     <NavBarState/> 
                     <SettingsState/>
                     <SignupState/>
+                    <AboutState/>
                 </div>
             );
         }else{
