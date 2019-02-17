@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Article from './Article';
+import "../HomePage/HomePage.css"
+
+// google-site-verification=B1YnStQRJv_T667wRzpWkPYfqFu92_hJ4Nsqq3ue00E
 
 class ArticleBox extends Component {
     constructor(props) {
@@ -23,7 +26,7 @@ class ArticleBox extends Component {
 
     render() {
         return (
-            <div id="articleBox">
+            <div className = "articleBox">
                 {this.state.articles.map(a => <Article {...a} />)}
             </div>
         );

@@ -50,9 +50,12 @@ class NavBar extends React.Component{
         if(this.props.isViewBar){
             return(
                 <div id="nav-bar">
-                    <button className = "gear" onClick={this.props.onSettings}></button>
+                    <div id="top">
+                        <button className = "gear" onClick={this.props.onSettings}></button>
+                    </div>
                     <ArticleBox />
-                    <div id="footer">© Vyew Team</div>
+                    <div id="footer">
+                    <div className = "logo"></div>© Vyew Team</div>
                 </div>
             );
         }

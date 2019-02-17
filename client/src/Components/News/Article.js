@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../HomePage/HomePage.css"
 
 class Article extends Component {
     render() {
