@@ -45,7 +45,13 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     }
 };
 
+//     width: ${props =>  props.width};
+//     height: ${props => props.height};
+
+
 const Wrapper = styled.div`
+    width: 95vw;
+    height: 100vh;
     background: #AAD3DF;
 `;
 

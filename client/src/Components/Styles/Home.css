@@ -47,7 +47,7 @@ body {
     from {
         width: 20vw;
     }
-    to{
+    to {
         width: 5vw;
     }
 }
@@ -79,4 +79,9 @@ body {
 #settingsWrapper.large {
     animation: slide-right 0.2s 1;
     width: 20vw;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
 }
