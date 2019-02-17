@@ -15,7 +15,7 @@
     flex:1;
 }
 
-#settings-wrapper, #signup-wrapper{
+#settings-wrapper, #signup-wrapper, #about-wrapper{
     background: linear-gradient(135deg, #4ca4d3 0%,#009126 100%);
     background: -moz-linear-gradient(-45deg, #4ca4d3 0%, #009126 100%);
     background: -webkit-linear-gradient(-45deg, #4ca4d3 0%,#009126 100%);
