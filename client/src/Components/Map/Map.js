@@ -22,7 +22,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     const possibleStates = [
         {type: CLICKSETTINGS, isSignUp: false, isSettings: true, isAbout: false,  isViewBar: false},
         {type: CLICKSIGNUP, isSignUp: true, isSettings: false, isAbout: false,  isViewBar: false},
-        {type: CLICKABOUT, isSignUp: false, isSettings: false, isAbout: true,  isViewBar: false},        
+        {type: CLICKABOUT, isSignUp: false, isSettings: false, isAbout: true,  isViewBar: false},
         {type: CLICKCLOSE, isSignUp: false, isSettings: false, isAbout: false,  isViewBar: true},
     ];
 
@@ -73,12 +73,12 @@ class Map extends React.Component{
             zoom: 11,
             zoomControl: true,
         })
-        
+
         this.renderMap();
 
-        // console.log(this.state.mapData);         
+        // console.log(this.state.mapData);
         this.state.mapData.forEach((location) => {
-            
+
             L.circle([location.latitude,location.longitude],{
                 color: 'green',
                 fillColor: 'green',
@@ -89,12 +89,12 @@ class Map extends React.Component{
         });
     }
 
-    renderMap = () => {
+    renderMap() {
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 18,
             minZoom: 2,
-	        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.map);
     }
 
