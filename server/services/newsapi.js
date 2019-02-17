@@ -20,3 +20,8 @@ export function getApiEverything(query, callback) {
 export function getApiTophead(query, callback) {
     return axios(genconfig('/top-headlines', {q: query})).then(callback);
 }
+
+export function getApiEnvironment(callback) {
+    return axios(genconfig('/everything?q=environment'))
+        .then(callback);
+}
