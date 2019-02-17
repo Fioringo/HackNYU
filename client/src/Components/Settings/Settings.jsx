@@ -48,7 +48,17 @@ class Settings extends React.Component{
                     <button className = "back" onClick = {this.props.onClose}></button>
                     <button className = "button-layout" onClick = {this.props.onAbout}>About</button>
                     <button className = "button-layout" onClick = {this.props.onSignUp}>Sign up</button>
-                    <div id="footer">© Vyew Team</div>
+                    <div className="aboutTitle">Settings</div>
+                    <form onSubmit={this.handleSubmit}>
+                        <input type="checkbox" id="showTree" checked="true"></input><div>Show trees</div>
+                        <input type="checkbox" id="showArticle"></input><div>Show article locations</div>
+                        {/* <input class = "inputText" type = "text" defaultValue="foo@bar.com"></input> */}
+                        {/* <input type = "submit" value = "Sign up"></input> */}
+                    </form>
+                    <div id="footer">
+                        <div className = "logo"></div>
+                        <div>© Vyew Team</div>
+                    </div>
                 </div>
             );
         }else{
