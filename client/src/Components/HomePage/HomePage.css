@@ -1,0 +1,18 @@
+#main-container{
+    display: flex;
+}
+
+#map{
+    height: 100vh;
+    width: 100vw;
+    flex: 12;
+}
+
+#nav-bar{
+    flex:1;
+}
+
+#settings-wrapper, #signup-wrapper{
+    flex:5;
+}
+
