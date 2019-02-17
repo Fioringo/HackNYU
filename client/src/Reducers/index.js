@@ -1,29 +1,32 @@
-import { CLICKLOGIN, CLICKSIGNUP, HASBUTTON, SUBMIT } from "../Actions";
+import { CLICKSETTINGS, CLICKSIGNUP, CLICKABOUT, CLICKCLOSE} from "../Actions";
 
 const initialState = {
 
-    isLogin: false,
+    stateStack: [],
     isSignUp: false,
-    hasButton: true,
-    isSubmitted: false
+    isSettings: false,
+    isAbout: false,
+    width: "95vw",
+    isViewBar: true,
+    mapData: []
 };
 
 export default (state = initialState, action) =>{
 
     switch(action.type){
-
-        case CLICKLOGIN:
-            return Object.assign({}, state, state.isLogin = action.isLogin, state.isSignUp = action.isSignUp, state.hasButton = action.hasButton);
+   
+        case CLICKSETTINGS:
+            return Object.assign({}, state, state.stateStack = action.stateStack, state.isSignUp = action.isSignUp, state.isSettings = action.isSettings, state.isAbout = action.isAbout, state.width = action.width, state.isViewBar = action.isViewBar);
 
         case CLICKSIGNUP:
-            return Object.assign({}, state, state.isSignUp = action.isSignUp, state.isLogin = action.isLogin, state.hasButton = action.hasButton);
+            return Object.assign({}, state, state.stateStack = action.stateStack, state.isSignUp = action.isSignUp, state.isSettings = action.isSettings, state.isAbout = action.isAbout, state.width = action.width, state.isViewBar = action.isViewBar);
 
-        case HASBUTTON:
-            return Object.assign({}, state, state.hasButton = action.hasButton);
+        case CLICKABOUT:
+            return Object.assign({}, state, state.stateStack = action.stateStack, state.isSignUp = action.isSignUp, state.isSettings = action.isSettings, state.isAbout = action.isAbout, state.width = action.width, state.isViewBar = action.isViewBar);
 
-        case SUBMIT:
-            return Object.assign({}, state, state.isSubmitted = action.isSubmitted);
-
+        case CLICKCLOSE:
+            return Object.assign({}, state, state.stateStack = action.stateStack, state.isSignUp = action.isSignUp, state.isSettings = action.isSettings, state.isAbout = action.isAbout, state.width = action.width, state.isViewBar = action.isViewBar);
+    
         default:
             return state;
     } 

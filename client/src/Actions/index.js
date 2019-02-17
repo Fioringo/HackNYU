@@ -1,5 +1,5 @@
 // actions for redux
-export const CLICKLOGIN = "CLICKLOGIN";
+export const CLICKSETTINGS = "CLICKLOGIN";
 export const CLICKSIGNUP = "CLICKSIGNUP";
-export const HASBUTTON = "HASBUTTON";
-export const SUBMIT = "SUBMIT";
+export const CLICKABOUT = "CLICKABOUT";
+export const CLICKCLOSE = "CLICKCLOSE";

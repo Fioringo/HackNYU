@@ -4,31 +4,45 @@ import 'leaflet/dist/leaflet.css';
 import styled from 'styled-components';
 import "../Styles/Maps.css"
 
-// width: ${props =>  props.width};
-//     height: ${props => props.height};
-
 const Wrapper = styled.div`
-    width: 93vw;
-    height: 100vh;
+    width: ${props =>  props.width};
+    height: ${props => props.height};
+    background: #AAD3DF;
 `;
 
 export default class Map extends React.Component{
 
+    constructor(props){
+
+        super(props);
+
+        this.state = {
+            mapData: this.props.mapData
+        }
+    }
+
     componentDidMount(){
 
         this.map = L.map('map', {
-            center: [58,16],
+            center: [42,10],
             zoom: 3,
-            zoomControl: false
+            zoomControl: true,
         })
 
-        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-	        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 15,
+            minZoom: 2,
+	        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.map);
-
     }
 
     render(){
-        return( <Wrapper id="map"/>)
+        // return( <Wrapper id="map"/>) why not this?
+        return(
+            <div>
+                {console.log("This is inside the map component: ", this.state.mapData)}
+                <Wrapper width="100vw" height="100vh" id="map"/>
+            </div>
+        );
     }
 }
