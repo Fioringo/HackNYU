@@ -1,13 +1,17 @@
-const express = require("express");
-const path = require("path");
-const bodyParser = require("body-parser");
+import express from 'express';
+import path from 'path';
+import morgan from 'morgan';
+import bodyParser from 'body-parser';
+import db from './db';
+import apiRouter from './router';
 
 const app = express();
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(morgan('dev'));
+app.use(express.static('dist'));
+app.use(apiRouter);
 
-app.use(express.static(path.join(__dirname, '..', 'client', 'public')));
-app.use(bodyParser.json());
+app.disable('x-powered-by');
 
-app.use("/", require("./routes"));
-
-// db.sync().then( () => console.log("Tables created!"));
-app.listen(8080, () => console.log("Listening on port 8080"));
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`App listening on port ${port}!`))
