@@ -46,14 +46,17 @@ class About extends React.Component{
             return(
                 <div id="about-wrapper">
                     <button class = "back" onClick = {this.props.onClose}></button>
-                    <div className = "logo"></div>
-                    <div className = "newsTitle">
+                    <div className = "aboutImage"></div>
+                    <div className = "aboutTitle">
                         About
                     </div>
                     <div className = "">
                         Vyew shows you current events, news articles, and tree locations on the world map. It takes in information from newsapi.org and sorts them based on tags. We wanted to use Watson Api in order to filter the articles, but it took too long to implement in our time constraint.
                     </div>
-                    <div id="footer">© Vyew Team</div>
+                    <div id="footer">
+                        <div className = "logo"></div>
+                        <div>© Vyew Team</div>
+                    </div>
                 </div>
             );
         }else{
