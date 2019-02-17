@@ -44,7 +44,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
 class Signup extends React.Component{
 
-    handleSubmit = (e) => {
+    handleSubmit(e){
         console.log(e)
     }
 
