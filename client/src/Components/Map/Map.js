@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import {CLICKSETTINGS, CLICKSIGNUP, CLICKABOUT, CLICKCLOSE} from "../../Actions";
 
 import "../HomePage/HomePage.css";
+import { setInterval } from 'timers';
 
 const mapStateToProps = (state, ownProps) => {
 
@@ -61,11 +62,15 @@ class Map extends React.Component{
 
         super(props);
         this.state = {
-            mapData: this.props.mapData
+            mapData: this.props.mapData,
+            counter: null
         }
     }
 
     componentDidMount(){
+
+        //initialize timer
+        this.interval = setInterval(() => this.setState({mapData: this.state.mapData.pop()}), 200);
 
         //initialize the map container
         this.map = L.map('map', {
@@ -87,6 +92,10 @@ class Map extends React.Component{
                 // stroke: false
             }).addTo(this.map);
         });
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.interval);
     }
 
     renderMap() {
