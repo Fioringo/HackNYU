@@ -20,7 +20,7 @@
     "express": "^4.16.4",
     "morgan": "^1.9.1",
     "pg": "^7.8.0",
-    "sequelize": "^4.42.0",
+    "sequelize": "^5.15.1",
     "url-loader": "^1.1.2"
   },
   "devDependencies": {
